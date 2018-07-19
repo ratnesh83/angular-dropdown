@@ -1,5 +1,5 @@
 {
-  "name": "angular-npm-module-seed",
+  "name": "angular-multiselect-dropdown",
   "version": "1.0.0",
   "description": "Starting point for developing Angular modules and publishing them on NPM",
   "keywords": [
@@ -15,28 +15,27 @@
     "build": "npm run clean && npm run transpile && npm run package && npm run minify && npm run copy"
   },
   "license": "MIT",
-  "homepage": "https://github.com/davguij/angular-npm-module-seed",
-  "bugs": {
-    "url": "https://github.com/davguij/angular-npm-module-seed/issues"
-  },
   "repository": {
-    "type": "git",
-    "url": "https://github.com/davguij/angular-npm-module-seed.git"
+    "type": "git"
   },
   "devDependencies": {
     "@angular/compiler": "^2.4.4",
     "@angular/compiler-cli": "^2.4.4",
+    "@types/underscore": "^1.8.8",
     "cpx": "^1.5.0",
     "renamer": "^0.6.1",
     "rimraf": "^2.5.4",
     "rollup": "^0.41.4",
-    "typescript": "~2.0.0",
+    "typescript": "^2.2.1",
     "uglify-js": "^2.7.5"
   },
   "dependencies": {
     "@angular/common": "^2.4.4",
     "@angular/core": "^2.4.4",
+    "@angular/forms": "^2.4.4",
+    "ng4-click-outside": "^1.0.1",
     "rxjs": "^5.0.3",
+    "underscore": "^1.8.3",
     "zone.js": "^0.7.6"
   }
 }
