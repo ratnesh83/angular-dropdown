@@ -21,7 +21,7 @@ import { SeedService } from './seed.service';
             <input style="width:100%;height:30px" type="search" [(ngModel)]="textValue" placeholder="Search...">
         </div>
         <ul class="list-styling">
-            <li class="option-style pointer" (click)="changeModel(option)" *ngFor="let option of options | searchFilter : valueField : textValue ; let i = index">
+            <li class="option-style pointer" (click)="changeModel(option)" *ngFor="let option of options | searchFilter : textField : textValue ; let i = index">
                 <div class="squaredFour">
                     <input (click)="changeModel(option)" [attr.id]="'squaredfour_'+i+option[valueField]" [type]="'checkbox'" [checked]="option.isSelected"
                         text="option[valueField]" />
@@ -119,6 +119,8 @@ import { SeedService } from './seed.service';
       .list-styling {
         padding: 6px;
         margin: 0;
+        overflow-y:auto;
+        max-height:350px;
       }
       .dropDownWidth {
         width: 100%;
